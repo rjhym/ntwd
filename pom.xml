@@ -1,11 +1,5 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <parent>
-        <artifactId>counter-parent</artifactId>
-        <groupId>counter</groupId>
-        <relativePath>../../pom.xml</relativePath>
-        <version>1.0</version>
-    </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>ntwd</artifactId>
     <packaging>war</packaging>
@@ -147,10 +141,6 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>com.sohu.tv</groupId>
-            <artifactId>memcloud-appclient</artifactId>
-        </dependency>
-        <dependency>
             <groupId>com.googlecode.xmemcached</groupId>
             <artifactId>xmemcached</artifactId>
             <version>1.4.1</version>
@@ -165,11 +155,6 @@
             <groupId>org.codehaus.janino</groupId>
             <artifactId>janino</artifactId>
             <version>2.5.16</version>
-        </dependency>
-        <dependency>
-            <groupId>com.sohu.spaces</groupId>
-            <artifactId>metaq-client</artifactId>
-            <version>0.0.1</version>
         </dependency>
         <dependency>
             <groupId>com.taobao.metamorphosis</groupId>
@@ -202,16 +187,6 @@
             <version>3.0.0</version>
         </dependency>
     </dependencies>
-    <repositories>
-        <repository>
-            <id>indexNexus</id>
-            <url>http://index.tv.sohuno.com/nexus/content/groups/public</url>
-        </repository>
-        <repository>
-            <id>sohuNexus</id>
-            <url>http://dev.hd.sohu.com.cn/nexus/content/groups/public</url>
-        </repository>
-    </repositories>
 
     <build>
         <resources>
