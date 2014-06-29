@@ -9,7 +9,7 @@
     </settings>
 
     <typeAliases>
-        <typeAlias type="com.heyongming.ntwd.entity.TestEntity" alias="test"></typeAlias>
+        <typeAlias type="com.heyongming.ntwd.entity.TestEntity" alias="testEntity"></typeAlias>
     </typeAliases>
     <mappers>
         <mapper resource="mybatis/testMapper.xml"/>
