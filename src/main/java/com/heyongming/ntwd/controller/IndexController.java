@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @Controller
+@RequestMapping("/phrase")
 public class IndexController {
 
     private static final Logger logger = LoggerFactory.getLogger(IndexController.class);
@@ -23,11 +24,9 @@ public class IndexController {
 
     @RequestMapping("/index")
     public ModelAndView test(HttpServletRequest request, HttpServletResponse response, Model model) {
-        model.addAttribute("username", request.getParameter("username"));
         model.addAttribute("phrases", phraseDao.getPhraseEntities());
         return new ModelAndView("index");
     }
-
 
 
 }

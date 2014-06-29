@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +11,7 @@
 </head>
 <body>
 <div class="container">
+    ${phrase}
 </div>
 <!-- Latest compiled and minified JavaScript -->
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>

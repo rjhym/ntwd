@@ -9,4 +9,8 @@ import java.util.List;
  */
 public interface PhraseDao {
     List<PhraseEntity> getPhraseEntities();
+
+    PhraseEntity getPhraseEntityById(long id);
+
+    int insertPhraseEntity(PhraseEntity phraseEntity);
 }
