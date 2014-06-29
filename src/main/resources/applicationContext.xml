@@ -14,10 +14,8 @@
     <mvc:annotation-driven/>
     <!-- 添加静态资源支持-->
     <mvc:resources mapping="/resources/**" location="/resources/"/>
-
     <!-- 启动Spring MVC的注解功能，完成请求和注解POJO的映射 -->
     <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"/>
-
 
     <import resource="applicationContext-restful.xml" />
     <import resource="applicationContext-service.xml"/>
