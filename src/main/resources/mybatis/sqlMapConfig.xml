@@ -9,9 +9,9 @@
     </settings>
 
     <typeAliases>
-        <typeAlias type="com.heyongming.ntwd.entity.TestEntity" alias="testEntity"></typeAlias>
+        <typeAlias type="com.heyongming.ntwd.entity.PhraseEntity" alias="phraseEntity"></typeAlias>
     </typeAliases>
     <mappers>
-        <mapper resource="mybatis/testMapper.xml"/>
+        <mapper resource="mybatis/phraseMapper.xml"/>
     </mappers>
 </configuration>

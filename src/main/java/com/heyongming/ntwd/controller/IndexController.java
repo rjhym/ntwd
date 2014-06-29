@@ -1,12 +1,11 @@
 package com.heyongming.ntwd.controller;
 
 
-import com.heyongming.ntwd.dao.TestDao;
+import com.heyongming.ntwd.dao.PhraseDao;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -19,13 +18,13 @@ public class IndexController {
 
     private static final Logger logger = LoggerFactory.getLogger(IndexController.class);
 
-    @Resource(name = "testDao")
-    TestDao testDao;
+    @Resource(name = "phraseDao")
+    PhraseDao phraseDao;
 
     @RequestMapping("/index")
     public ModelAndView test(HttpServletRequest request, HttpServletResponse response, Model model) {
         model.addAttribute("username", request.getParameter("username"));
-        model.addAttribute("test", testDao.getTestEntities());
+        model.addAttribute("phrases", phraseDao.getPhraseEntities());
         return new ModelAndView("index");
     }
 

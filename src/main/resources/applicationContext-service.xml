@@ -21,9 +21,9 @@
         <property name="configLocation" value="classpath:mybatis/sqlMapConfig.xml"/>
     </bean>
 
-    <bean id="testDao" class="org.mybatis.spring.mapper.MapperFactoryBean">
+    <bean id="phraseDao" class="org.mybatis.spring.mapper.MapperFactoryBean">
         <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
-        <property name="mapperInterface" value="com.heyongming.ntwd.dao.TestDao"/>
+        <property name="mapperInterface" value="com.heyongming.ntwd.dao.PhraseDao"/>
     </bean>
 
 </beans>
