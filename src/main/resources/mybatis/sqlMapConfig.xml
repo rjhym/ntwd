@@ -10,8 +10,10 @@
 
     <typeAliases>
         <typeAlias type="com.heyongming.ntwd.entity.PhraseEntity" alias="phraseEntity"></typeAlias>
+        <typeAlias type="com.heyongming.ntwd.entity.PhrasePageEntity" alias="phrasePageEntity"></typeAlias>
     </typeAliases>
     <mappers>
         <mapper resource="mybatis/phraseMapper.xml"/>
+        <mapper resource="mybatis/phrasePageMapper.xml"/>
     </mappers>
 </configuration>

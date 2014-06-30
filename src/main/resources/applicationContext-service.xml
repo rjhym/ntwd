@@ -26,4 +26,9 @@
         <property name="mapperInterface" value="com.heyongming.ntwd.dao.PhraseDao"/>
     </bean>
 
+    <bean id="phrasePageDao" class="org.mybatis.spring.mapper.MapperFactoryBean">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+        <property name="mapperInterface" value="com.heyongming.ntwd.dao.PhrasePageDao"/>
+    </bean>
+
 </beans>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.heyongming.ntwd.dao.PhrasePageDao"><!--注意：此处的命名空间是UserMapper的全限定类名-->
+    <select id="getPhrasePageEntityById" resultType="phrasePageEntity">
+        SELECT * FROM t_phrase_page WHERE id = #{id};
+    </select>
+
+    <insert id="insertPhrasePageEntity" parameterType="phrasePageEntity">
+        INSERT INTO t_phrase_page (phrase,phrase_url,phrase_initial,phrase_page)
+        VALUES (#{phrase},#{phraseUrl},#{phraseInitial},#{phrasePage})
+    </insert>
+
+    <select id="getPhrasePageEntities" resultType="phrasePageEntity">
+        SELECT * FROM t_phrase_page
+    </select>
+
+</mapper>
