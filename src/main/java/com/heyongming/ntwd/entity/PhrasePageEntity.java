@@ -11,6 +11,7 @@ public class PhrasePageEntity {
     private String phraseUrl;
     private String phraseInitial;
     private int phrasePage;
+    private int sync_count;
 
 
     public long getId() {
@@ -51,5 +52,13 @@ public class PhrasePageEntity {
 
     public void setPhrasePage(int phrasePage) {
         this.phrasePage = phrasePage;
+    }
+
+    public int getSync_count() {
+        return sync_count;
+    }
+
+    public void setSync_count(int sync_count) {
+        this.sync_count = sync_count;
     }
 }

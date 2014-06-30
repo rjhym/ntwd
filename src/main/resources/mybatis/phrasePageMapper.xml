@@ -12,7 +12,7 @@
     </insert>
 
     <select id="getPhrasePageEntities" resultType="phrasePageEntity">
-        SELECT * FROM t_phrase_page
+        SELECT * FROM t_phrase_page WHERE sync_count=0
     </select>
 
 </mapper>

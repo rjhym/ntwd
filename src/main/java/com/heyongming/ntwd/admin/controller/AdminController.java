@@ -81,7 +81,6 @@ public class AdminController {
 
     @RequestMapping(value = "/statusWord", method = RequestMethod.GET)
     public ModelAndView statusWord(HttpServletRequest request, HttpServletResponse response, Model model) {
-
         model.addAttribute("task running?", WebCrawler.run);
         model.addAttribute("total", WebCrawler.total);
         return new ModelAndView("/");

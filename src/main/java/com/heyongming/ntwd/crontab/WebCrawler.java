@@ -27,7 +27,7 @@ import java.util.List;
  * Created by hym on 14-6-29.
  */
 public class WebCrawler extends Thread {
-    public static boolean run = true;
+    public static boolean run = false;
 
     public static int total = 0;
 
@@ -44,11 +44,13 @@ public class WebCrawler extends Thread {
 
     @Override
     public void run() {
+        run = true;
         List<PhrasePageEntity> list = phrasePageDao.getPhrasePageEntities();
         for (PhrasePageEntity phrasePageEntity : list) {
             getChengyu(phrasePageEntity.getPhraseUrl(), phrasePageEntity.getPhrase());
             total++;
         }
+        run = false;
     }
 
     private void getChengyu(String url, String phrase) {
@@ -59,14 +61,11 @@ public class WebCrawler extends Thread {
         CloseableHttpClient closeableHttpClient = httpClientBuilder.build();
 
         HttpGet httpGet = new HttpGet(url);
-        System.out.println(httpGet.getRequestLine());
         try {
             //执行get请求
             HttpResponse httpResponse = closeableHttpClient.execute(httpGet);
             //获取响应消息实体
             HttpEntity entity = httpResponse.getEntity();
-            //响应状态
-            System.out.println("status:" + httpResponse.getStatusLine());
             //判断响应实体是否为空
             if (entity != null) {
                 String text = EntityUtils.toString(entity, "GBK");

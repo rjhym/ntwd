@@ -42,7 +42,7 @@ public class WebCrawlerUrl extends Thread {
         total = 0;
         run = true;
         String[] chs = {"A", "B", "C", "D", "E", "F", "G",
-                "H", "I", "G", "K", "L", "M", "N",
+                "H", "I", "J", "K", "L", "M", "N",
                 "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"};
         for (String ch : chs) {
             int nextPage = 1;
