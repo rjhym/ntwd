@@ -1,5 +1,6 @@
 package com.heyongming.ntwd.entity;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -63,8 +64,9 @@ public class PhraseEntity {
         this.phraseDemo = phraseDemo;
     }
 
-    public Date getLastUpdateTime() {
-        return lastUpdateTime;
+    public String getLastUpdateTime() {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        return sdf.format(lastUpdateTime);
     }
 
     public void setLastUpdateTime(Date lastUpdateTime) {

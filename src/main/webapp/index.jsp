@@ -11,29 +11,8 @@
 </head>
 <body>
 <div class="container">
-    <form role="form" action="/ntwd/admin/phrase/add.json" method="post">
-        <div class="form-group">
-            <label for="phrase">成语</label>
-            <input type="text" class="form-control" id="phrase" name="phrase" placeholder="成语">
-        </div>
-        <div class="form-group">
-            <label for="phraseSpell">成语拼音</label>
-            <input type="text" class="form-control" id="phraseSpell" name="phraseSpell" placeholder="成语拼音">
-        </div>
-        <div class="form-group">
-            <label for="phraseParaphrase">成语拼音</label>
-            <input type="text" class="form-control" id="phraseParaphrase" name="phraseParaphrase" placeholder="成语释义">
-        </div>
-        <div class="form-group">
-            <label for="phraseProvenance">成语拼音</label>
-            <input type="text" class="form-control" id="phraseProvenance" name="phraseProvenance" placeholder="成语出处">
-        </div>
-        <div class="form-group">
-            <label for="phraseDemo">成语拼音</label>
-            <input type="text" class="form-control" id="phraseDemo" name="phraseDemo" placeholder="成语示例">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-    </form>
+    <h1>成语世界</h1>
+    <a href="/ntwd/phrase/l-100-1.jsp">分页展示</a>
 </div>
 <!-- Latest compiled and minified JavaScript -->
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
